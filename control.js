@@ -209,9 +209,18 @@ let fruits=['apple','melon','watermelon','mango','date']
 
 
 let nums=[1,2,3,4,5,6]
- nums.map((num)=>{
-    console.log(num)
-//    return num+1
-})
+//  nums.map((num)=>{
+//     console.log(num)
+// //    return num+1
+// })
 
-console.log(newNum)
+// console.log(newNum)
+
+
+//length
+let length=nums.length
+
+
+// let incl=fruits.includes('gava')
+console.log(incl)
+
