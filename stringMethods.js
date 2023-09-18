@@ -21,8 +21,8 @@
 // let newArr=arr.join()
 // console.log(newArr)
 
-let string1='string 1'
-let string2='string 2'
+let string1 = 'string 1'
+let string2 = 'string 2'
 
 // console.log(string1 +' '+  string2)
 // console.log(string1 +' '+  4)
@@ -35,7 +35,7 @@ let string2='string 2'
 // let find=string.includes('helo')
 
 
-let string="this is my testing string  "
+let string = "this is my testing string  "
 
 // let newStr=string.replace('this','helo this')
 // let newStr=string.replaceAll('s','M')
@@ -52,19 +52,54 @@ let string="this is my testing string  "
 // let sliceString=str.slice(1)
 // console.log(capital + sliceString)
 
-let str='hello string'
-let capital=str.charAt(0).toUpperCase() //t
-let sliceString=str.slice(1)//his string
-let spaceIndex=str.indexOf(' ')//
-let nextChar=spaceIndex+1 
-let capital2=str.charAt(nextChar).toUpperCase()//S
-let remainString=str.slice(spaceIndex+2)//tring
-let newremainString=str.slice(1,spaceIndex)//his
+let str = 'hello string'
+let capital = str.charAt(0).toUpperCase() //t
+let sliceString = str.slice(1)//his string
+let spaceIndex = str.indexOf(' ')//
+let nextChar = spaceIndex + 1
+let capital2 = str.charAt(nextChar).toUpperCase()//S
+let remainString = str.slice(spaceIndex + 2)//tring
+let newremainString = str.slice(1, spaceIndex)//his
 
 // console.log(capital)
 // console.log()
 // console.log(remainString)
-console.log(capital  + newremainString + ' ' + capital2 + remainString)
+// console.log(capital  + newremainString + ' ' + capital2 + remainString)
 
 
 // console.log(capital + sliceString)
+
+
+// const test = () => {
+//     console.log(1)
+// }
+
+
+
+const test1 = async () => {
+    await new Promise((resolve, reject) => {
+        setTimeout(() => {
+
+            console.log(2)
+            resolve()
+            // reject(()=>new  Error("some error occur"))
+        }, 2000)
+    })
+
+    console.log(3)
+    console.log(4)
+}
+// const test2 = () => {
+//     console.log(3)
+// }
+
+
+// test1().then(()=>{
+//     console.log('helo')
+// })
+
+try {
+    test1()
+} catch (error) {
+    console.log(error.message)
+}
